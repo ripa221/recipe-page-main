@@ -1,2 +1,63 @@
+:root {
+    --White: hsl(0, 0%, 100%);
+--Stone-100: hsl(30, 54%, 90%);
+--Stone-150: hsl(30, 18%, 87%);
+--Stone-600: hsl(30, 10%, 34%);
+--Stone-900: hsl(24, 5%, 18%);
+--Brown-800: hsl(14, 45%, 36%);
+--Rose-800: hsl(332, 51%, 32%);
+--Rose-50: hsl(330, 100%, 98%);
+--Blue: hsl(228, 45%, 44%);
+--Gray: hsl(0, 9%, 85%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+
+.container {
+    font-family: "Outfit" , sans-serif;
+    /* font-family: "Young Serif" ,sans-serif; */
+    background-color: var(--Rose-50);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+ul, ol {
+    padding-inline-start: 40px;
+}
+
+.card {
+    width: 100%;
+    max-width: 750px;
+    padding: 20px;
+    border:none;
+    background-color: var(--White);
+    box-shadow: 0 0 5px var(--Gray) ;
+    border-radius: 20px;
+   
+}
+
+.recipe-img{
+    width: 100%;
+    border-radius: 15px;
+    background-size: cover;
+    display: block;
+}
+
+
+
+
 .attribution { font-size: 0.6875rem; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution a { color: var(--Blue); }
