@@ -1,3 +1,5 @@
+
+/* --Global Variable Color Set-- */
 :root {
     --White: hsl(0, 0%, 100%);
 --Stone-100: hsl(30, 54%, 90%);
@@ -11,22 +13,26 @@
 --Gray: hsl(0, 9%, 85%);
 }
 
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+
 html {
     font-size: 16px;
 }
 
 
+
+/* --Main Body Section Part Starts-- */
 .container {
     font-family: "Outfit" , sans-serif;
     /* font-family: "Young Serif" ,sans-serif; */
-    background-color: var(--Rose-50);
-    padding: 20px;
+    background-color: var(--Stone-100);
+    padding-block-start: 130px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -34,14 +40,20 @@ html {
     gap: 20px;
 }
 
+
+
+/* --For List giving space in left. As we set the ( * ) padding and margin as zero-- */
 ul, ol {
-    padding-inline-start: 40px;
+    padding-inline-start: 22px;
 }
 
+
+
+/* Main Card Section Part Starts Here */
 .card {
     width: 100%;
-    max-width: 750px;
-    padding: 20px;
+    max-width: 700px;
+    padding: 25px;
     border:none;
     background-color: var(--White);
     box-shadow: 0 0 5px var(--Gray) ;
@@ -49,6 +61,7 @@ ul, ol {
    
 }
 
+/* --Recipe Image Part-- */
 .recipe-img{
     width: 100%;
     border-radius: 15px;
@@ -57,7 +70,176 @@ ul, ol {
 }
 
 
+/* --Recipe Name Part-- */
+.recipe-name {
+    font-family: "Young Serif" ,sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    margin-block: 20px;
+    color: var(--Stone-900);
+}
 
 
+/* --Recipe About & Nutrition Description Part-- */
+.recipe-description, .nutrition-instructions {
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--Stone-600);
+   
+}
+
+
+
+/* --Preparation Time Section Part-- */
+.recipe-preparation-time {
+    padding: 25px;
+    background-color: var(--Rose-50);
+    border-radius: 15px;
+    margin-block: 40px;
+}
+
+
+/* Preparation Time Lists Heading Part */
+.making-time {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: var(--Rose-800);
+    margin-block-end: 10px;
+}
+
+
+/* --Preparation Time, Ingredients, Instructions Lists (ul,ol classes here) Part-- */
+.preparation, .recipe-things {
+    font-weight: 400;
+    color: var(--Stone-600);
+    font-size: 1rem;
+    line-height: 2;
+ 
+    
+}
+
+
+
+
+/* --Preparation Time Lists Marker Part-- */
+.preparation-marker::marker {
+    color: var(--Rose-800);
+    
+}
+
+
+/* --Preparation Time & Instructions Text Bold Part Here */
+.bold {
+   
+    font-weight: 600;
+    color: var(--Stone-900);
+}
+
+
+/* --Ingredients, Instructions & Nutrition Headings Part Here-- */
+.recipe-follow-things {
+       font-family: "Young Serif" ,sans-serif;
+       color: var(--Brown-800);
+       font-weight: 400;
+       font-size: 1.5rem;
+        margin-block-end: 16px;
+}
+
+
+
+
+/* --Ingredients & Instructions Marker Part Here-- */
+.ing-ins-marker::marker {
+color: var(--Brown-800);
+font-weight: bold;
+}
+
+/* --Recipe List Text Part Here-- */
+.recipe-list-text {
+    text-align: left;
+    margin-inline-start: 15px;
+}
+
+
+/* --Breaking Line Part Here-- */
+.breaking-line {
+    margin-block: 24px;
+    border: none;
+    height: 1px;
+    background-color: var(--Gray);
+}
+
+
+/* --Table Main Part-- */
+
+/* --Nutrition Heading Another Part Here-- */
+.nutrition-instructions {
+    margin-block-end: 18px;
+}
+
+
+/* --Nutrition Table Part-- */
+.nutrition-table{
+    font-weight: 400;
+    color: var(--Stone-600);
+    font-size: 1rem;
+    border-collapse: collapse;
+    width:100%;
+}
+
+/* --Nutrition Table Data Part-- */
+.nutrition-table td{
+     padding: 1rem 0;
+    border-bottom:1px solid var(--Gray) ;
+   
+}
+
+
+/* --Nutrition Table Every Rows 1st Data Part-- */
+.nutrition-table td:first-child {
+    padding-inline-start: 20px;
+    padding-inline-end: 2px;
+}
+
+
+/* --Nutrition Table Last Rows Data (There is no border) Part-- */
+.nutrition-table tr:last-child td {
+    border-bottom: none;
+
+}
+
+
+/* --Nutrition Table Every Rows Last Data Part-- */
+.bold-color {
+    color: var(--Brown-800);
+    font-weight: 600;
+   
+}
+
+/* Main Card Section Ends Here */
+
+/* --Footer Section Part-- */
 .attribution { font-size: 0.6875rem; text-align: center; }
     .attribution a { color: var(--Blue); }
+
+    /* --Main Body Section Ends Here-- */
+
+    /* --Responsive Part for Mobile */
+
+    @media(max-width:768px) {
+        .container {
+            padding-block-start: 0;
+        }
+
+        .card{
+            border-radius: 0;
+            padding: 0;
+        }
+.recipe-img {
+    border-radius: 0;
+}
+
+        .box-inside-info {
+            padding:25px;
+        }
+    }

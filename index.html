@@ -4,22 +4,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+
 
   <!-- Browser Logo -->
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
 
   <!-- Font Young Serif Link -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Young+Serif&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Young+Serif&display=swap"
+    rel="stylesheet">
 
-<!-- Font Outfit Link -->
- <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Young+Serif&display=swap" rel="stylesheet">
+  <!-- Font Outfit Link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Young+Serif&display=swap"
+    rel="stylesheet">
 
-<!-- CSS Link -->
+  <!-- CSS Link -->
   <link rel="stylesheet" href="styles.css">
   <title>Frontend Mentor | Recipe page</title>
 
@@ -35,40 +39,76 @@
         eggs cooked
         to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p>
 
-      <p class="making-time">Preparation time</p>
-      <ul class="preparation">
-        <li> <span class="bold">Total:</span> Approximately 10 minutes</li>
-        <li><span class="bold"> Preparation:</span> 5 minutes</li>
-        <li><span class="bold">Cooking:</span> 5 minutes</li>
-      </ul>
+      <section class="recipe-preparation-time">
+        <p class="making-time">Preparation time</p>
+        <ul class="preparation">
+          <li class="preparation-marker">
+            <p class="recipe-list-text"><span class="bold">Total:</span> Approximately 10 minutes</p>
+          </li>
+          <li class="preparation-marker">
+            <p class="recipe-list-text"><span class="bold"> Preparation:</span> 5 minutes</p>
+          </li>
+          <li class="preparation-marker">
+            <p class="recipe-list-text"><span class="bold">Cooking:</span> 5 minutes</p>
+          </li>
+        </ul>
+      </section>
+
 
 
       <h2 class="recipe-follow-things">Ingredients</h2>
-      <ul class="ingredients">
-        <li>2-3 large eggs</li>
-        <li>Salt, to taste</li>
-        <li> Pepper, to taste</li>
-        <li>1 tablespoon of butter or oil</li>
-        <li> Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
+      <ul class="recipe-things">
+        <li class="ing-ins-marker">
+          <p class="recipe-list-text">2-3 large eggs</p>
+        </li>
+        <li class="ing-ins-marker">
+          <p class="recipe-list-text">Salt, to taste</p>
+        </li>
+        <li class="ing-ins-marker">
+          <p class="recipe-list-text">Pepper, to taste</p>
+        </li>
+        <li class="ing-ins-marker">
+          <p class="recipe-list-text">1 tablespoon of butter or oil</p>
+        </li>
+        <li class="ing-ins-marker">
+          <p class="recipe-list-text">Optional fillings: cheese, diced vegetables, cooked meats, herbs</p>
+        </li>
       </ul>
+
 
       <hr class="breaking-line">
 
       <h2 class="recipe-follow-things">Instructions</h2>
-      <ol class="instructions">
-        <li>Beat the eggs: In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed.You can
-          add a tablespoon of water or milk for a fluffier texture. </li>
-
-        <li>Heat the pan: Place a non-stick frying pan over medium heat and add butter or oil.</li>
-        <li> Cook the omelette: Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure
-          the eggs evenly coat the surface.</li>
-        <li> Add fillings (optional): When the eggs begin to set at the edges but are still slightly runny in the
-          middle, sprinkle your chosen fillings over one half of the omelette.
+      <ol class="recipe-things">
+        <li class="ing-ins-marker">
+          <p class="recipe-list-text"><span class="bold">Beat the eggs:</span> In a bowl, beat the eggs with a pinch of
+            salt and pepper until they are well mixed.You can
+            add a tablespoon of water or milk for a fluffier texture.</p>
         </li>
-        <li>
-          Fold and serve: As the omelette continues to cook, carefully lift one edge and fold it over the
-          fillings. Let it cook for another minute, then slide it onto a plate.</li>
-        <li>Enjoy: Serve hot, with additional salt and pepper if needed.</li>
+
+        <li class="ing-ins-marker">
+          <p class="recipe-list-text"><span class="bold">Heat the pan:</span> Place a non-stick frying pan over medium
+            heat and add butter or oil.</p>
+        </li>
+        <li class="ing-ins-marker">
+          <p class="recipe-list-text"><span class="bold"> Cook the omelette:</span> Once the butter is melted and
+            bubbling, pour in the eggs. Tilt the pan to ensure
+            the eggs evenly coat the surface.</p>
+        </li>
+        <li class="ing-ins-marker">
+          <p class="recipe-list-text"> <span class="bold">Add fillings (optional):</span> When the eggs begin to set at
+            the edges but are still slightly runny in the
+            middle, sprinkle your chosen fillings over one half of the omelette.</p>
+        </li>
+        <li class="ing-ins-marker">
+          <p class="recipe-list-text"> <span class="bold">Fold and serve:</span> As the omelette continues to cook,
+            carefully lift one edge and fold it over the
+            fillings. Let it cook for another minute, then slide it onto a plate.</p>
+        </li>
+        <li class="ing-ins-marker">
+          <p class="recipe-list-text"><span class="bold">Enjoy:</span> Serve hot, with additional salt and pepper if
+            needed.</p>
+        </li>
       </ol>
 
       <hr class="breaking-line">
@@ -79,22 +119,24 @@
       <p class="nutrition-instructions">The table below shows nutritional values per serving without the additional
         fillings.</p>
       <table class="nutrition-table">
-        <tr>
-          <td>Calories</td>
-          <td><span class="bold color">277kcal</span></td>
-        </tr>
-        <tr>
-          <td>Carbs</td>
-          <td><span class="bold color"> 0g</span></td>
-        </tr>
-        <tr>
-          <td>Protein</td>
-          <td><span class="bold color"> 20g</span></td>
-        </tr>
-        <tr>
-          <td> Fat</td>
-          <td><span class="bold color">22g</span></td>
-        </tr>
+        <tbody class="nutrition-body">
+          <tr class="nutrition-row">
+            <td >Calories</td>
+            <td><span class="bold-color"> 277kcal</span></td>
+          </tr>
+          <tr class="nutrition-row">
+            <td >Carbs</td>
+            <td><span class="bold-color"> 0g</span></td>
+          </tr>
+          <tr class="nutrition-row">
+            <td >Protein</td>
+            <td><span class="bold-color"> 20g</span></td>
+          </tr>
+          <tr class="nutrition-row">
+            <td > Fat</td>
+            <td><span class="bold-color">22g</span></td>
+          </tr>
+        </tbody>
       </table>
     </article>
   </main>
